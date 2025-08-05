@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Camera</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .main-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .small-text {
+            font-size: 14px;
+            opacity: 0.8;
+            font-style: italic;
+        }
+        .truck-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="truck-icon">🚛</div>
+        <div class="main-text">Jade camera como camionero, pero por lo menos no tiene que vaciarlos</div>
+        <div class="small-text">Esto lo creó Aitor en defensa de Jade</div>
+    </div>
+</body>
+</html>
